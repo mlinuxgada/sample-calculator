@@ -1,0 +1,30 @@
+{% include 'common/header.html' %}
+
+<form  method="POST" action="/calculator/result" name="calculator_data">
+    <h5>Calculator</h5>
+
+    <label>Number A</label>
+    <input type="text" name="numbers[]" required >
+    <br />
+
+    <label>Number B</label>
+    <input type="text" name="numbers[]" required >
+    <br />
+
+    <label>Operations</label>
+    <select name="operation" id="operation">
+
+        {% for operation in allowed_operaions %}
+            <option value="{{operation}}">{{operation}}</option>
+        {% endfor %}
+
+    </select>
+
+    <br />
+
+    <button type="submit">Calculate</button>
+
+</form>
+
+
+{% include 'common/footer.html' %}

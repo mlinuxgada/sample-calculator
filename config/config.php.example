@@ -1,0 +1,5 @@
+<?php
+
+$envConfig = [
+    'allowed_operaions' => ['plus', 'minus', 'multiplication', 'division'],
+];
