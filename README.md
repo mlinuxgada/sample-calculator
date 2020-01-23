@@ -19,4 +19,11 @@ $ cp config/config.php.example config/config.php
 
 Open/Render calc input page: http://whatever.app.address/calculator
 
+# Unit Tests
+
+Test coverage on the Calculator Service. Run as usual:
+```
+./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/CalculatorTest.php
+```
+
 Enjoy ;-)
